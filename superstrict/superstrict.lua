@@ -42,7 +42,7 @@ local _error = error
 -- @return true if n is whitelisted on t
 local function is_whitelisted(t, n)
 	for _,whitelisted_name in pairs(whitelisted_names[t] or {}) do
-		if n:find(whitelisted_name) then
+		if tostring(n):find(whitelisted_name) then
 			return true
 		end
 	end
