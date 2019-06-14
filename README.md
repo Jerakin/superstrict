@@ -1,13 +1,12 @@
-# Welcome to Defold
+# Superstrict
+Super strict is a module for Defold that makes it easier to use and reuse super strict in your projects.
 
-This project was created from the "empty" project template.
 
-The settings in ["game.project"](defold://open?path=/game.project) are all the default. A bootstrap empty ["main.collection"](defold://open?path=/main/main.collection) is included.
+# Installation
+You can use Superstrict in your own project by adding this project as a [Defold library dependency](http://www.defold.com/manuals/libraries/). Open your game.project file and in the dependencies field under project add:
 
-Check out [the documentation pages](https://defold.com/learn) for examples, tutorials, manuals and API docs.
+https://github.com/Jerakin/superstrict/archive/master.zip
 
-If you run into trouble, help is available in [our forum](https://forum.defold.com).
 
-Happy Defolding!
-
----
+# Usage
+If you do not have any Native extensions then you will only need to require the lock `local lock = require "superstrict.lock"` if you want to exclude extensions or other global names then you can add them to superstrict `lock.add({"clipboard", "rnd"})`
