@@ -11,7 +11,7 @@ local builtins = {
 	"crash", "http", "hash_to_hex", "hash", "setfenv", "package", "error", "pprint", "image", "dofile", "hashmd5", 
 	"getmetatable", "__PhysicsContext", "collectionproxy", "table", "collectgarbage", "quat", "RenderScriptConstantBuffer", 
 	"require", "math", "loadfile", "vector3", "setmetatable", "select", "factory", "unpack", "getfenv", "vector4", "io",
-	"init", "update", "on_input", "on_message", "final", "on_reload"
+	"init", "update", "on_input", "on_message", "final", "on_reload", "html5"
 }
 
 superstrict.lock(_G, builtins)
